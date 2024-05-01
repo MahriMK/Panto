@@ -1,0 +1,70 @@
+.nav {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  gap: 20px;
+  // padding-bottom: 92px;
+  padding-bottom: clamp(1.25rem, 0.071rem + 5.89vw, 5.375rem);
+
+  &__logo {
+    align-self: center;
+    font-weight: 700;
+    // font-size: 28px;
+    font-size: clamp(18px, 0.946rem + 0.89vw, 28px);
+    letter-spacing: 0.28px;
+    text-transform: capitalize;
+  }
+
+  &__list {
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 62px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__item {
+    font-size: 18px;
+  }
+
+  // &__link {
+  // }
+
+  &__card {
+    position: relative;
+    justify-self: flex-end;
+    align-self: center;
+  }
+
+  // &__card-img {
+  // }
+
+  &__card-count {
+    position: absolute;
+    top: 3px;
+    right: -6px;
+
+    display: inline-block;
+    height: 25px;
+    padding: 0 6px;
+    background-color: var(--accent);
+    border-radius: 40px;
+
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  &__btn {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+// base
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/fonts";
+@import "./base/base";
+
+// block
+@import "./block/header";
+
+@import "./block/nav";
+@import "./block/mobile-nav";
+@import "./block/form";
+@import "./block/info-dot";
+@import "./block/info-hint";
+@import "./block/choosing";
+@import "./block/product";
+@import "./block/card";
+@import "./block/slider";
+
+@import "./block/footer";

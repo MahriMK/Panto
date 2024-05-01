@@ -1,0 +1,81 @@
+.product {
+  background-color: var(--product-bg);
+  text-align: center;
+
+  padding: 50px 0px;
+
+  &__title {
+    padding-bottom: 32px;
+
+    // font-size: 42px;
+    font-size: clamp(32px, 1.821rem + 0.89vw, 42px);
+    font-weight: 700;
+  }
+
+  &__tabs {
+    background-color: var(--tabs-bg);
+
+    display: inline-flex;
+    padding: 6px;
+
+    border-radius: 44px;
+    margin-bottom: 86px;
+
+    @include tabs() {
+      flex-direction: column;
+      padding: 20px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__tabs-btn {
+    padding: 7px 20px;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    border-radius: 32px;
+
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+      background-color: rgba(#fff, 0.5);
+    }
+
+    &--active {
+      background-color: #fff;
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__slider {
+    margin-bottom: clamp(30px, 0.982rem + 4.46vw, 60px);
+
+    @include desktop() {
+      padding: 0 20px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-block;
+    color: var(--accent);
+    font-size: 18px;
+    padding-right: 60px;
+    line-height: 185%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/arrow-right.svg);
+      background-repeat: no-repeat;
+      height: 24px;
+      width: 42px;
+      top: 6px;
+      right: 0;
+    }
+  }
+}

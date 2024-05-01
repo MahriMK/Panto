@@ -1,0 +1,39 @@
+.mobile-nav-wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 320px;
+
+  padding: 30px;
+  background-color: var(--footer-bg);
+  color: var(--footer-text-color);
+
+  &--open {
+    display: block;
+    z-index: 3;
+  }
+}
+
+.mobile-nav {
+  margin-top: 30px;
+  padding-top: 20px;
+  display: grid;
+  gap: 20px;
+  font-size: 20px;
+
+  border-top: 1px solid var(--ui-white);
+
+  &__btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &__link {
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}

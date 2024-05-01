@@ -1,0 +1,114 @@
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+
+  padding: 118px 0 56px;
+  padding: clamp(50px, 1.101rem + 10.12vw, 118px) 0 56px;
+
+  &__inner {
+    display: flex;
+    margin-bottom: 118px;
+
+    @include mobile-xl() {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__content {
+    flex-basis: 293px;
+    // margin-right: 140px;
+    margin-right: clamp(80px, -7.857rem + 26.79vw, 140px);
+
+    @include mobile-xl() {
+      flex-basis: fit-content;
+      margin-right: 0;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.28px;
+    text-transform: capitalize;
+
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 160%;
+
+    opacity: 0.8;
+  }
+
+  &__services,
+  &__furniture {
+    flex-basis: 133px;
+    // margin-right: 84px;
+    margin-right: clamp(30px, -9.696rem + 24.11vw, 84px);
+  }
+
+  &__services-title,
+  &__furniture-title {
+    font-family: var(--font-footer);
+    color: var(--footer-accent);
+
+    margin-bottom: 20px;
+
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.23px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile-xl() {
+      flex-direction: column;
+      gap: 30px;
+
+      text-align: center;
+    }
+  }
+
+  &__bottom-text {
+    font-family: var(--font-footer);
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    opacity: 0.5;
+  }
+
+  &__bottom-links {
+    display: flex;
+    column-gap: 40px;
+
+    font-size: 15px;
+    line-height: 160%;
+
+    opacity: 0.8;
+
+    @include mobile-xl() {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__item {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+
+    opacity: 0.8;
+  }
+}
